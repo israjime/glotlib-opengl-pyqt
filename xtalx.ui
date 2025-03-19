@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>825</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>xtalx</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QTabWidget::tabWidget {
+    alignment: left;
+}
+
+QTabWidget::tab {
+    background-color: #000000;  /* Tab background color */
+    color: white;               /* Tab text color */
+    padding: 10px;              /* Padding for the tab */
+}
+
+QTabWidget::tab:selected {
+    background-color: #2ecc71;  /* Selected tab background color */
+    color: white;               /* Selected tab text color */
+}
+
+QTabWidget::tab:hover {
+    background-color: #2980b9;  /* Tab hover background color */
+}
+
+QTabWidget::tab_2 {
+    background-color: #000000;  /* Tab background color */
+    color: white;               /* Tab text color */
+    padding: 10px;              /* Padding for the tab */
+}
+
+QTabWidget::tab_2:selected {
+    background-color: #2ecc71;  /* Selected tab background color */
+    color: white;               /* Selected tab text color */
+}
+
+QTabWidget::tab_2:hover {
+    background-color: #2980b9;  /* Tab hover background color */
+}
+
+QTabWidget::tab_3 {
+    background-color: #000000;  /* Tab background color */
+    color: white;               /* Tab text color */
+    padding: 10px;              /* Padding for the tab */
+}
+
+QTabWidget::tab_3:selected {
+    background-color: #2ecc71;  /* Selected tab background color */
+    color: white;               /* Selected tab text color */
+}
+
+QTabWidget::tab_3:hover {
+    background-color: #2980b9;  /* Tab hover background color */
+}</string>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>900</width>
+      <height>825</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="documentMode">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="plots">
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <attribute name="title">
+      <string>Plots</string>
+     </attribute>
+     <widget class="QOpenGLWidget" name="glotlibWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>35</y>
+        <width>900</width>
+        <height>700</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="saveButton">
+      <property name="geometry">
+       <rect>
+        <x>725</x>
+        <y>748</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Save as CSV File</string>
+      </property>
+      <property name="icon">
+       <iconset theme="QIcon::ThemeIcon::DocumentSave"/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="serialNum">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>6</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Serial Number:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="serialPlace">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>6</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Place Holder</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="about">
+     <attribute name="title">
+      <string>Settings</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="settings">
+     <attribute name="title">
+      <string>About</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
